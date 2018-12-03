@@ -69,7 +69,6 @@ def lcs(sequence_1, sequence_2):
             # Match!
             if sequence_1_char == sequence_2_char:
                 lcs_array[i][j] = lcs_array[i - 1][j - 1] + sequence_1_char
-                continue
             # No Match
             else:
                 # Get current string from lcs_array
